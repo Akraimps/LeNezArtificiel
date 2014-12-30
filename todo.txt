@@ -1,4 +1,0 @@
--mettre le site sur github
--préparer le rpi
--hook git sur le rpi
--mettre le logo github en bas
