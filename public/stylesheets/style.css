@@ -1,7 +1,4 @@
 /*
-* Import nib
-*/
-/*
 * Grab a custom font from Google
 */
 @import url("http://fonts.googleapis.com/css?family=Quicksand");
@@ -99,10 +96,6 @@ td {
 a img {
   border: none;
 }
-/*
-* Store the main color and
-* background color as variables
-*/
 body {
   font-family: 'Georgia';
   background-color: #faf9f0;
@@ -138,19 +131,12 @@ header .widget h3 {
   font-size: 15px;
 }
 .container {
-  display: block;
   margin: 50px 50px 0px 0px;
   overflow: hidden;
   left: 200px;
 }
-.container h1 {
-  text-align: left;
-  border: 1px sol;
-}
-.container h2 {
-  text-align: center;
-}
 .container .widget {
+  position: relative;
   margin-right: 10px;
   padding-bottom: 20px;
   font-weight: bold;
@@ -162,6 +148,11 @@ header .widget h3 {
   padding-top: 10px;
   border-top: 1px dotted #ddd;
 }
+.container .widget .PageNumber {
+  position: absolute;
+  bottom: 0px;
+  right: 10px;
+}
 .panel {
   float: left;
   width: 400px;
@@ -171,15 +162,18 @@ header .widget h3 {
   padding-top: 20px;
 }
 .main-content p {
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 .main-content .widget {
-  margin: 0px 150px;
-  padding: 0px;
+  margin: 20px 150px;
+  padding: 20px 20px;
+  font-weight: normal;
+  margin-bottom: 0px;
 }
 .main-content .widget h1 {
   font-size: 15px;
   text-align: center;
+  font-weight: bold;
 }
 .space {
   margin-top: 20px;
@@ -239,4 +233,10 @@ footer {
 .github a img {
   width: 16px;
   height: 16px;
+}
+.Page {
+  display: none;
+}
+.Page.Active {
+  display: block;
 }

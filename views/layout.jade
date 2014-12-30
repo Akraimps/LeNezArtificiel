@@ -54,11 +54,63 @@ html
 							h2 <a href="/end"> Conclusion </a>
 		.container
 			.widget
+				.PageNumber
 				h1 #{section}
 				if subpart != null
 					h2 #{subpart}
 			.main-content
 				block content
+	script(type='text/javascript').
+		setActivePage = function(index) {
+			console.log(index)
+			var pages, _ref;
+			if ((_ref = document.querySelector('.main-content .Page.Active')) != null) {
+				_ref.classList.remove('Active');
+				console.log(_ref.classList)
+			}
+			pages = document.querySelectorAll('.main-content .Page');
+			pages[index].classList.add('Active');
+			document.querySelector('.main-content').dataset.pageIndex = index;
+			document.querySelector('.PageNumber').textContent = "" + (index + 1) + " / " + pages.length;
+		};
+
+		startPageIndex = 0;
+
+		/*if (window.location.hash.length > 0) {
+			_ref = window.location.hash.slice(1).split(';'), sectionIndex = _ref[0], startPageIndex = _ref[1];
+			sectionIndex = (sectionIndex | 0) - 1;
+			startPageIndex = (startPageIndex | 0) - 1;
+		}*/
+
+		//document.querySelector(".main-content section.Item-" + startMenuItem.dataset.itemName).classList.add('Active');
+
+		setActivePage(startPageIndex);
+
+		document.addEventListener('keydown', function(event) {
+			console.log(event)
+			var pageIndex, pages, sectionIndex;
+			pageIndex = 0;
+			pages = document.querySelectorAll('.main-content .Page');
+			console.log(pages.length)
+			switch (event.keyCode) {
+				/*case 38:
+					sectionIndex = Math.max(sectionIndex - 1, 0);
+					setActiveSection(sectionIndex);
+					break;
+				case 40:
+					sectionIndex = Math.min(sectionIndex + 1, menuItems.length - 1);
+					setActiveSection(sectionIndex);
+					break;*/
+				case 37:
+					pageIndex = Math.max(pageIndex - 1, 0);
+					setActivePage(pageIndex);
+					break;
+				case 39:
+					pageIndex = Math.min(pageIndex + 1, pages.length - 1);
+					setActivePage(pageIndex);
+				}
+			});
+
 	footer
 		p Créer par Anastassia KRAIMPS, Clara MARIE et Guillaume THIVOLET
 		.github
