@@ -1,0 +1,63 @@
+doctype
+html
+	head
+		title #{title} - Le nez artificiel
+		link(rel='stylesheet', href='/stylesheets/style.css')
+	body
+		header
+			.widget
+				p TPE
+				h3 2014-2015
+			h1 Le nez artificiel
+			img(src='http://static.wixstatic.com/media/262dbc_8ee69e7aa61099a9e765868f15039c70.png_srz_p_130_70_75_22_0.50_1.20_0.00_png_srz')
+		.panel
+			block panel
+				.widget
+					h1 Sommaire
+					ul#section
+						li
+							h2 <a href="/"> Introduction </a>
+						li
+							h2 I. Le système olfactif
+						li 
+							|A. 
+							a(href="/11") Le fonctionnement  du système olfactif
+						li
+							|B. 
+							a(href="/12") Comment est caractérisée une odeur? 
+						li
+							|C. 
+							a(href="/13") Les troubles du système olfactif
+						li
+							h2 II. Les systèmes experts
+						li
+							|A. 
+							a(href="/21") Qu'est-ce qu'un système expert? 
+						li
+							|B. 
+							a(href="/22") Les algorithmes, cœur des systèmes experts 
+						li
+							|C. 
+							a(href="/23") Exemples de systèmes experts dans la médecine (palier aux troubles de la vue) 
+						li
+							h2 III. Palier aux dysfonctionnements du système olfactif
+						li
+							|A. 
+							a(href="/31") Moyen de remplacer la carte mentale réelle par un système expert
+						li
+							|B. 
+							a(href="/32") Recherche et développement: "le nez électronique", projet
+						li
+							|C. 
+							a(href="/33") Les limites de cette conception
+						li
+							h2 <a href="/end"> Conclusion </a>
+		.container
+			.widget
+				h1 #{section}
+				if subpart != null
+					h2 #{subpart}
+			.main-content
+				block content
+	footer
+		p Créer par Anastassia KRAIMPS, Clara MARIE et Guillaume THIVOLET

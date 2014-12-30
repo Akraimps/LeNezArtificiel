@@ -1,0 +1,234 @@
+/*
+* Import nib
+*/
+/*
+* Grab a custom font from Google
+*/
+@import url("http://fonts.googleapis.com/css?family=Quicksand");
+/*
+* Nib provides a CSS reset
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-family: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+body {
+  line-height: 1;
+  color: #000;
+  background: #fff;
+}
+ol,
+ul {
+  list-style: none;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle;
+}
+caption,
+th,
+td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+a img {
+  border: none;
+}
+/*
+* Store the main color and
+* background color as variables
+*/
+body {
+  font-family: 'Georgia';
+  background-color: #faf9f0;
+  color: #444;
+}
+header {
+  font-family: 'Quicksand';
+  padding: 40px 10px;
+  color: #fff;
+  font-size: 40px;
+  text-align: center;
+  background-color: #fa5b4d;
+  vertical-align: top;
+}
+header img {
+  position: absolute;
+  top: 25px;
+  right: 50px;
+}
+header .widget {
+  position: absolute;
+  margin: 0px 10px 0px 40px;
+  padding: 15px 40px 15px 40px;
+  top: 10px;
+  float: left;
+  color: #444;
+}
+header .widget p {
+  font-size: 20px;
+  text-align: center;
+}
+header .widget h3 {
+  font-size: 15px;
+}
+.container {
+  display: block;
+  margin: 50px 50px 0px 0px;
+  overflow: hidden;
+  left: 200px;
+}
+.container h1 {
+  text-align: left;
+  border: 1px sol;
+}
+.container h2 {
+  text-align: center;
+}
+.container .widget {
+  margin-right: 10px;
+  padding-bottom: 20px;
+  font-weight: bold;
+}
+.container .widget h1 {
+  font-family: 'Georgia';
+}
+.container .widget h2 {
+  padding-top: 10px;
+  border-top: 1px dotted #ddd;
+}
+.panel {
+  float: left;
+  width: 400px;
+  margin: 50px;
+}
+.main-content {
+  padding-top: 20px;
+}
+.main-content p {
+  margin-bottom: 20px;
+}
+.main-content .widget {
+  margin: 0px 150px;
+  padding: 0px;
+}
+.main-content .widget h1 {
+  font-size: 15px;
+  text-align: center;
+}
+.space {
+  margin-top: 20px;
+}
+.widget {
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  background-color: #faf9f0;
+  -webkit-box-shadow: inset 0px 0px 0px 3px rgba(255,255,255,0.8), 0px 3px 0px -2px rgba(0,0,0,0.1);
+  box-shadow: inset 0px 0px 0px 3px rgba(255,255,255,0.8), 0px 3px 0px -2px rgba(0,0,0,0.1);
+  line-height: 1.8;
+}
+.widget h1 {
+  font-family: 'Quicksand';
+  margin: 13px 10px 4px;
+  padding-bottom: 10px;
+  -webkit-border-radius: 2px 2px 0px 0px;
+  border-radius: 2px 2px 0px 0px;
+  font-size: 20px;
+  text-align: center;
+}
+.widget ul {
+  border-top: 1px dotted #ddd;
+  font-size: 13px;
+  padding: 0px 10px;
+  margin-bottom: 10px;
+  padding-top: 10px;
+}
+.widget ul li a {
+  padding-left: 10px;
+  text-decoration: none;
+}
+.widget ul li h2 {
+  padding-left: 5px;
+  text-decoration: underline;
+}
+.widget ul li h2 a {
+  color: #444;
+}
+p {
+  line-height: 1.8;
+}
+footer {
+  width: 500px;
+  margin: 50px auto;
+  border-top: 1px dotted #ccc;
+  padding-top: 5px;
+  font-size: 13px;
+  text-align: center;
+  clear: both;
+}

@@ -1,0 +1,11 @@
+{
+	"name": "LeNezArtificiel",
+	"version": "0.0.1",
+	"private": "false",
+	"dependencies": {
+    	"express": "4.10.6",
+    	"jade": "*",
+    	"stylus": "*",
+    	"nib": "*"
+  	}
+}
