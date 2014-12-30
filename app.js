@@ -3,12 +3,12 @@ var express = require('express')
 var stylus = require ('stylus')
 var nib = require('nib')
 var fs = require('fs')
-var S = require('string')
+var string = require('string')
 
 var cfg = fs.readFileSync('cfg.txt', 'utf-8')
-var port = S(cfg).chompLeft('port=').s
+var port = string(cfg).chompLeft('port=').s
 
-var app = express()
+var app = express() 
 
 function compile (str, path) {
 	return stylus(str)
