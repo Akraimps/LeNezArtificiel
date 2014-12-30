@@ -1,4 +1,4 @@
-[nezartificiel.ovh](www.nezartificiel.ovh)
+[nezartificiel.ovh](http://nezartificiel.ovh)
 
 README
 
