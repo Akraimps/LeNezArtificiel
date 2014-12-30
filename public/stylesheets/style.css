@@ -236,3 +236,7 @@ footer {
   padding-right: 10px;
   display: inline;
 }
+.github a img {
+  width: 16px;
+  height: 16px;
+}
